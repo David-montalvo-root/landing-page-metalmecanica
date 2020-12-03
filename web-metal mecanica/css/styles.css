@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2? familia:Arimo:wght@400;700&display-swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* navegador */
+.cabeza {
+  width: 100%;
+  height: 3rem;
+  padding: 0 7rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #6e7175;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-logo-color {
+  color: #0cafd8;
+}
+
+.icono-menu {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 1rem;
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.link:hover{
+  background-color:#222327;
+}
+/*navegador*/
+
+/*Header*/
+
+#pantalla-dividida {
+  display: flex;
+}
+
+.izquierda {
+  background: linear-gradient(-190deg, #30353b 0%, #1a1b1f);
+  height: 100vh;
+  width: 50%;
+}
+
+.titulo-header {
+  font-size: 40px;
+  width: 45%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+.creative {
+  color: #0cafd8;
+}
+
+.color-p {
+  font-size: 19px;
+  line-height: 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 80px;
+  color: white;
+}
+
+.creativo {
+  border: 3px solid white;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+.creativo:hover {
+  background: rgb(66, 66, 66);
+}
+
+.link-a {
+  color: white;
+}
+
+.derecha {
+  background: url("../img/soldadura.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+}
+
+/*contenedor del primer, segundo y tercer section*/
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  padding: 60px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo-portafolio {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.galeria-portafolio {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen_portafolio {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+}
+
+.imagen_portafolio:hover .hover-galeria {
+  transform: scale(1);
+}
+
+.imagen_portafolio > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(216, 213, 213, 0.3);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #fff;
+}
+
+/*segundo  section*/
+
+.proyectos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*compartido con segundo y tercer section*/
+.titulo-2 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+/*compartido con segundo y tercer section*/
+.descripcion {
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+/* compartido con segundo y tercer section*/
+.caja {
+  background: linear-gradient(-190deg, #30353b 0%, #1a1b1f);
+  width: 30%;
+  padding: 10px 0;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* compartido con segundo y tercer section*/
+.cajatext {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* compartido con segundo y tercer section*/
+.titulo-empresa {
+  font-size: 25px;
+  color: rgb(14, 14, 14);
+  margin-bottom: 8px;
+}
+
+/* compartido con segundo y tercer section*/
+.texto-empresa {
+  color: white;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.background {
+  width: 68%;
+  height: 290px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.background_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  background-color: rgb(255, 174, 0);
+}
+
+.background_text {
+  position: absolute;
+  width: 90%;
+  bottom: 30px;
+  left: 15px;
+  color: white;
+}
+.background_tittle {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* tercer section*/
+
+.trabajo-caja {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cartaimg {
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*Pie de pagina o Footer*/
+footer {
+  background: linear-gradient(-190deg, #30353b 0%, #1a1b1f);
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.footerf {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contentf {
+  text-align: center;
+}
+
+.contentf h4 {
+  color: white;
+  border-bottom: 3px solid white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.contentf p {
+  color: white;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+/*Break points*/
+
+/*Dispositivos grandes(laptops/desktops, 992px y mas)*/
+@media screen and (max-width: 992px) {
+
+  .nav-contenedor {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 3rem;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s;
+}
+
+.link{
+    width: 100%;
+    padding: 1rem 0;
+    color: white;
+    background:#6e7175;
+    margin: 0;
+    text-align: center;
+}
+
+.icono-menu {
+    display: inline;
+    cursor: pointer;
+}
+
+.link:hover {
+  background-color:#222327;
+}
+
+.mostrar {
+    left: 0;
+}
+
+  
+  .titulo-header{
+    width: 60%;
+  }
+  .color-p{
+    width: 70%;
+  }
+
+  .imagen_portafolio {
+    width: 45%;
+  }
+
+  .trabajo-caja {
+    justify-content: space-evenly;
+  }
+
+  .servicios .caja {
+    width: 45%;
+  }
+
+  .background {
+    width: 45%;
+  }
+
+  .caja {
+    width: 45%;
+  }
+}
+
+/*Dispositivos medianos(tablets apaisadas,768px y mas)*/
+@media screen and (max-width: 768px) {
+
+  .titulo-header{
+    margin-left: auto;
+    width: 77%; 
+    text-align: center;
+  }
+  .color-p{
+    margin-left: auto;
+    width: 80%;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .imagen_portafolio {
+    width: 65%;
+  }
+  
+  main .contenedor {
+    padding: 60px 0;
+  }
+
+  .titulo-2 {
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+  }
+
+  .servicios .caja {
+    width: 65%;
+  }
+
+  .proyectos {
+    justify-content: space-evenly;
+  }
+
+  .caja {
+    margin-bottom: 40px;
+    width: 65%;
+  }
+
+  .titulo-empresa {
+    font-size: 30px;
+  }
+
+  .background {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  .background_texto {
+    display: none;
+  }
+
+  .background {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+}
+
+/*dispostivos extra pequeños(telefonos) */
+@media screen and (max-width: 600px) {
+
+  #pantalla-dividida {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izquierda{
+    width: 100%;
+    height: auto;
+  }
+  .color-p{
+    margin-top: 70px;
+  }
+
+  .creativo{
+    margin-left: 34%;
+  }
+
+  .derecha{
+    width: 100%;
+    height: 55vh;
+  }
+
+  .imagen_portafolio {
+    width: 95%;
+  }
+  .titulo-empresa {
+    font-size: 20px;
+  }
+
+  .texto-empresa {
+    font-size: 16px;
+  }
+  .servicios .caja {
+    width: 95%;
+  }
+
+  .caja {
+    width: 95%;
+  }
+
+  .background {
+    width: 95%;
+  }
+
+
+  .footerf {
+    flex-direction: column;
+    border: none;
+  }
+
+  .contentf {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contentf h4 {
+    border: none;
+  }
+
+  .contentf p {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+  }
+
+  .titulo-final {
+    font-size: 20px;
+  }
+}
